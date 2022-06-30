@@ -103,10 +103,8 @@ public class PROGRAMMING_EXERCISES {
 
 
     public static void main(String[] args) {
-
         int choose;
         Scanner input = new Scanner(System.in);
-
         do {
             showExercise();
             choose = Integer.parseInt(input.nextLine());
@@ -160,4 +158,3 @@ public class PROGRAMMING_EXERCISES {
         } while (choose != 7);
     }
 }
-
