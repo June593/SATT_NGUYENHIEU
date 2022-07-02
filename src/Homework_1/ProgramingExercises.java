@@ -50,13 +50,17 @@ public class ProgramingExercises {
         System.out.println("Sum of  a & b: " + (a + b));
         System.out.println("Multiply of  a & b: " + (a - b));
         System.out.println("Subtract of a & b: " + (a * b));
-        System.out.println("Divide of  a & b: " + (a / b));
-        System.out.println("Remainder of  a & b: " + (a % b));
+        if (b != 0) {
+            System.out.println("Divide of  a & b: " + (a / b));
+            System.out.println("Remainder of  a & b: " + (a % b));
+        } else System.out.println("Can't divide and remainder because the dividend must be different 0");
     }
 
     public static String reserveInputString(String inputString) {
         String reserveString = "";
         char ch;
+
+
         for (int i = 0; i < inputString.length(); i++) {
             ch = inputString.charAt(i);
             reserveString = ch + reserveString;
