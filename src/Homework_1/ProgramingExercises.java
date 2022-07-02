@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class PROGRAMMING_EXERCISES {
+public class ProgramingExercises {
     public static int fibonacci(int n) {
         if (n < 0) return -1;
         else if (n == 1 || n == 2) {
