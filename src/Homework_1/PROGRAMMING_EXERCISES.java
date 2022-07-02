@@ -46,32 +46,12 @@ public class PROGRAMMING_EXERCISES {
         return true;
     }
 
-    public static int sumOfTwoNumbers(int a, int b) {
-        return a + b;
-    }
-
-    public static int multiplyOfTwoNumbers(int a, int b) {
-        return a - b;
-    }
-
-    public static int subtractOfTwoNumbers(int a, int b) {
-        return a * b;
-    }
-
-    public static int divideOfTwoNumbers(int a, int b) {
-        return a / b;
-    }
-
-    public static int remainderOfTwoNumbers(int a, int b) {
-        return a % b;
-    }
-
-    public static void calculateOfTwoNumber(int a, int b) {
-        System.out.println("Sum of a,b: " + sumOfTwoNumbers(a, b));
-        System.out.println("Multiply of a,b: " + multiplyOfTwoNumbers(a, b));
-        System.out.println("Subtract of a,b: " + subtractOfTwoNumbers(a, b));
-        System.out.println("Divide of a,b: " + divideOfTwoNumbers(a, b));
-        System.out.println("Remainder of a,b: " + remainderOfTwoNumbers(a, b));
+    public static void printCalculationsOfTwoNumbers(int a, int b) {
+        System.out.println("Sum of  a & b: " + (a + b));
+        System.out.println("Multiply of  a & b: " + (a - b));
+        System.out.println("Subtract of a & b: " + (a * b));
+        System.out.println("Divide of  a & b: " + (a / b));
+        System.out.println("Remainder of  a & b: " + (a % b));
     }
 
     public static String reserveInputString(String inputString) {
@@ -101,7 +81,6 @@ public class PROGRAMMING_EXERCISES {
         System.out.print("Choose : ");
     }
 
-
     public static void main(String[] args) {
         int choose;
         Scanner input = new Scanner(System.in);
@@ -116,10 +95,10 @@ public class PROGRAMMING_EXERCISES {
                     break;
                 case 2:
                     System.out.print("Enter number a = ");
-                    int a = input.nextInt();
+                    int a = Integer.parseInt(input.nextLine());
                     System.out.print("Enter number b = ");
-                    int b = input.nextInt();
-                    calculateOfTwoNumber(a, b);
+                    int b = Integer.parseInt(input.nextLine());
+                    printCalculationsOfTwoNumbers(a, b);
                     System.out.println("****************************************************************************");
                     break;
                 case 3:
@@ -143,7 +122,6 @@ public class PROGRAMMING_EXERCISES {
                     System.out.println("****************************************************************************");
                     break;
                 case 6:
-                    System.out.println(". Write a method to reverse an input string.");
                     System.out.print("Enter inputString: ");
                     String inputString2 = input.nextLine();
                     System.out.println(reserveInputString(inputString2));
